@@ -7,7 +7,7 @@ http:
     - "api-v5.alltrails.com"
 
   script:
-    - match: ^https:\/\/api\-v5\.alltrails\.com\/api\/alltrails\/me\?
+    - match: ^https:\/\/api\-v5\.alltrails\.com\/api\/alltrails\/me
       name: AllTrails
       type: response
       require-body: true
