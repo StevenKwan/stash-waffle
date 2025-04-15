@@ -1,0 +1,18 @@
+name: 解锁 All Trails Pro
+desc: 解锁 All Trails Pro
+
+http:
+  mitm:
+    - "api-v5.alltrails.com"
+
+  script:
+    - match: ^https:\/\/api\-v5\.alltrails\.com\/api\/alltrails\/me\?
+      name: alltrails
+      type: response
+      require-body: true
+      timeout: 60
+
+script-providers:
+  alltrails:
+    url: https://raw.githubusercontent.com/StevenKwan/stash-waffle/main/patch/alltrails.js
+    interval: 86400
