@@ -1,5 +1,6 @@
 name: 解锁 All Trails Pro
 desc: 解锁 All Trails Pro
+icon: https://www.alltrails.com/app-icon-180.png
 
 http:
   mitm:
