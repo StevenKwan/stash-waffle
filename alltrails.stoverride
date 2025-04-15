@@ -7,12 +7,12 @@ http:
 
   script:
     - match: ^https:\/\/api\-v5\.alltrails\.com\/api\/alltrails\/me\?
-      name: alltrails
+      name: AllTrails
       type: response
       require-body: true
       timeout: 60
 
 script-providers:
-  alltrails:
+  AllTrails:
     url: https://raw.githubusercontent.com/StevenKwan/stash-waffle/main/patch/alltrails.js
     interval: 86400
