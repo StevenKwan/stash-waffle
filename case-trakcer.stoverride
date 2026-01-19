@@ -1,0 +1,10 @@
+name: Case Tracker 去广告
+desc: Case Tracker 去广告
+icon: https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/48/40/74/484074ea-6b5c-ac1b-d801-68e28f34e2be/AppIconProd-0-0-1x_U007epad-0-1-0-85-220.png/400x400ia-75.png
+
+http:
+  mitm:
+    - "api.immivision.net"
+
+  body-rewrite:
+    - ^https:\/\/api\.immivision\.net\/v1\/getUserMetadata response-jq .isPaid=true | .subscriberSince="2026-01-11T18:38:00.663Z" | .nextRenewalAt="2030-10-29T15:44:25.458Z"
